@@ -157,7 +157,7 @@ div.title-div {
     width: 12.5rem;
     border-radius: 100%;
     margin: 1.25rem auto;
-    /* background-image: url("../assets/images/.png"); */
+    background-image: url("../assets/images/chrisbw.png");
     background-color: #000;
     border: 0.0625rem white solid; }
     
@@ -357,6 +357,13 @@ div.title-div {
     #footer .footer-div .contact-info {
       color: white;
       font-size: 3.125em; }
+  
+    #footer .footer-div .copyright {
+      font-family: 'Raleway', sans-serif;
+      color: white;
+      text-align: center;
+      margin: auto 0 auto 0;
+    }
 
 @media (max-width: 768px) {
   * {
@@ -518,7 +525,7 @@ div.title-div {
       width: 12.5rem;
       border-radius: 100%;
       margin: 1.25rem auto;
-      /* background-image: url("../assets/images/.png"); */
+      background-image: url("../assets/images/chrisbw.png");
       background-color: #000;
       border: 0.0625rem white solid; }
       
