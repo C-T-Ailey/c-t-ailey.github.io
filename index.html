@@ -16,7 +16,7 @@
     <ul class="navbar-container">
       <li class="navbar-li-left"><a class="navbar-a" href="#home">T O P</a></li>
       <li class="navbar-li"><a class="navbar-a" href="#contact">C O N T A C T</a></li>
-      <li class="navbar-li"><a class="navbar-a" href="#portfolio">P O R T F O L I O</a></li>
+      <li class="navbar-li"><a class="navbar-a" href="#portfolio">P R O J E C T S</a></li>
       <li class="navbar-li"><a class="navbar-a" href="#skills">S K I L L S</a></li>
       <li class="navbar-li"><a class="navbar-a" href="#about-me">A B O U T</a></li>
     </ul>
@@ -35,9 +35,21 @@
       </div>
       <div class="columns is-multiline is-mobile about-me-columns">
         <div class="column is-full-desktop is-full-mobile">
-          <p class="about-me-text">I am compelled to learn, to be challenged, and to create. With a professional background of over 10 years in private security and over 15 years of amateur creative projects, a desire for further growth and development led me to studying Python in my spare time.</p>
+          <p class="about-me-text">I am compelled to learn, to be challenged, and to create. With a professional background of over 10 years in private security and a lifetime of creative passion projects, a desire for further growth and development led me to studying Python in my spare time.</p>
           <br>
           <p class="about-me-text">The breakthrough moment where the seemingly impossible is achieved has instilled in me a love for programming, and inspired me to enrol in General Assembly's Software Engineering Immersive course. The blending of methodical, logical planning and execution with creative, outside-the-box expression has made software development a beautiful medium to me, and one I relish the continued opportunity to work with.</p>
+        </div>
+      </div>
+      <div>
+        <h1 class="section-title-interests">P E R S O N A L &nbsp; I N T E R E S T S</h1>
+      </div>
+      <div class="columns is-multiline is-mobile about-me-columns">
+        <div class="column is-full-desktop is-full-mobile">
+          <p class="about-me-text">I have over 15 years of experience with amateur graphic design and image manipulation, and have previously done such work as designing logos and avatars for forums and social media profiles, custom texture files for video game modifications, and mockups and audio-visual resources for my personal projects.</p>
+          <br>
+          <p class="about-me-text">I also harbour a deep and abiding fascination with retro/vintage AV systems, and have invested significant time in learning how to restore them to good working condition – most recently, a 1979 Sony Walkman cassette player, a 1982 Thorens turntable, and a 1995 Sony Playstation game console.</p>
+          <br>
+          <p class="about-me-text">I am an avid creative writer, having twice participated in and completed the annual National Novel Writing Month event, as well as previously contributing film reviews to amateur publications and continuing to develop three ongoing personal projects.</p>
         </div>
       </div>
     </div>
@@ -46,7 +58,7 @@
       <div>
         <div>
           <h1 class="skills-sub-group">F R O N T E N D</h1>
-          <div class="skills-icon-div">
+          <div class="skills-icon-div front">
             <i class="devicon-html5-plain-wordmark skills-icon"></i>
             <i class="devicon-css3-plain-wordmark skills-icon"></i>
             <i class="devicon-javascript-plain skills-icon"></i>
@@ -63,15 +75,18 @@
           <div class="skills-icon-div">
             <i class="devicon-express-original-wordmark skills-icon" style="font-size: 70px"></i>
             <i class="devicon-nodejs-plain-wordmark skills-icon" style="font-size: 70px"></i>
-            <i class="devicon-django-plain-wordmark skills-icon"></i>
             <i class="devicon-mongodb-plain-wordmark skills-icon"></i>
+            <i class="devicon-django-plain-wordmark skills-icon"></i>
             <i class="devicon-postgresql-plain-wordmark skills-icon"></i>
           </div>
         </div>
           <h1 class="skills-sub-group">T O O L S</h1>
           <div class="skills-icon-div">
             <i class="devicon-git-plain-wordmark skills-icon"></i>
-            <i class="devicon-github-plain skills-icon"></i>
+            <div id="github-wordmark">
+              <i id="github-icon" class="devicon-github-plain skills-icon"></i>
+              <span id="github-name">GitHub</span>
+            </div>
             <i class="devicon-heroku-original-wordmark skills-icon"></i>
             <i class="devicon-npm-original-wordmark skills-icon"></i>
             <i class="devicon-vscode-plain-wordmark skills-icon"></i>
@@ -82,58 +97,67 @@
       </div>
     </div>
     <div id="portfolio" class="section portfolio">
-      <h1 class="section-title">P O R T F O L I O</h1>
+      <h1 class="section-title">P R O J E C T S</h1>
+      <h1 class="descr-prompt">C L I C K &nbsp; A &nbsp; P R E V I E W &nbsp; T O &nbsp; L E A R N &nbsp; M O R E</h1>
       <div class="columns is-multiline is-mobile project-wrap">
         <div class="column is-half-desktop is-half-tablet is-full-mobile project-column" id="project-one">
           <div class="hover-div">
             <h1 class="project-title">WELCOME TO HAMBURGER MONARCH</h1>
-            <p class="project-description">Build: HTML, CSS, JavaScript</p>
-            <p class="project-description">A browser-based game built with HTML, CSS and JavaScript where the player must construct a burger according to a preview image of their target from random falling ingredients.</p>
-            <div class="git-div">
-              <a href="https://github.com/C-T-Ailey/Project-1-Burger-Game" target="_blank" class="button project-link">View the code on GitHub</a>
-            </div>
-            <div class="link-div">
-              <a href="https://c-t-ailey.github.io/Project-1-Burger-Game/" target="_blank" class="button project-link">Play Welcome to Hamburger Monarch</a>
+            <div class="descr-container">
+              <p class="project-description">Build: HTML, CSS, JavaScript</p>
+              <p class="project-description">A browser-based game built with HTML, CSS and JavaScript where the player must construct a burger according to a preview image of their target from random falling ingredients.</p>
+              <div class="git-div">
+                <a href="https://github.com/C-T-Ailey/Project-1-Burger-Game" target="_blank" class="button project-link">View the code on GitHub</a>
+              </div>
+              <div class="link-div">
+                <a href="https://c-t-ailey.github.io/Project-1-Burger-Game/" target="_blank" class="button project-link">Play Welcome to Hamburger Monarch</a>
+              </div>  
             </div>
           </div>
         </div>
         <div class="column is-half-desktop is-half-tablet is-full-mobile project-column" id="project-two">
           <div class="hover-div">
-            <h1 class="project-title">THE NOMAD BOOKSHELF</h1>
-            <p class="project-description">Build: HTML, CSS, Express, Embedded JavaScript, MongoDB, Heroku</p>
-            <p class="project-description">An Express app where users can register to view, submit and review books and their authors.</p>
-            <div class="git-div">
-              <a href="https://github.com/C-T-Ailey/Project02GroupGit" target="_blank" class="button project-link">View the code on GitHub</a>
-            </div>
-            <div class="link-div">
-              <a href="https://nomadbooks.herokuapp.com/" target="_blank" class="button project-link">Visit The Nomad Bookshelf</a>
+            <div class="descr-container">
+              <h1 class="project-title">THE NOMAD BOOKSHELF</h1>
+              <p class="project-description">Build: HTML, CSS, Express, Embedded JavaScript, MongoDB, Heroku</p>
+              <p class="project-description">An Express app where users can register to view, submit and review books and their authors.</p>
+              <div class="git-div">
+                <a href="https://github.com/C-T-Ailey/Project02GroupGit" target="_blank" class="button project-link">View the code on GitHub</a>
+              </div>
+              <div class="link-div">
+                <a href="https://nomadbooks.herokuapp.com/" target="_blank" class="button project-link">Visit The Nomad Bookshelf</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="column is-half-desktop is-half-tablet is-full-mobile project-column" id="project-three">
           <div class="hover-div">
-            <h1 class="project-title">CAKE SERA, SERA</h1>
-            <p class="project-description">Build: HTML, CSS, Bulma, Python, Django, PostGreSQL</p>
-            <p class="project-description">A full-stack Django app, constructed as part of a three-person team, where users can view and submit entries for various baked goods and variant recipes for each. Serving as the Team Lead for this project, I managed planning, preparation and deployment, as well as defining the database models, implementing pagination and providing styling.</p>
-            <div class="git-div">
-              <a href="https://github.com/C-T-Ailey/Project-3-Cake-Recipe-Site-Fixed" target="_blank" class="button project-link">View the code on GitHub</a>
-            </div>
-            <div class="link-div">
-              <a href="https://cakeprojectapp.herokuapp.com/" target="_blank" class="button project-link">Visit Cake Sera, Sera</a>
+            <div class="descr-container">
+              <h1 class="project-title">CAKE SERA, SERA</h1>
+              <p class="project-description">Build: HTML, CSS, Bulma, Python, Django, PostGreSQL</p>
+              <p class="project-description">A full-stack Django app, constructed as part of a three-person team, where users can view and submit entries for various baked goods and variant recipes for each. Serving as the Team Lead for this project, I managed planning, preparation and deployment, as well as defining the database models, implementing pagination and providing styling.</p>
+              <div class="git-div">
+                <a href="https://github.com/C-T-Ailey/Project-3-Cake-Recipe-Site-Fixed" target="_blank" class="button project-link">View the code on GitHub</a>
+              </div>
+              <div class="link-div">
+                <a href="https://cakeprojectapp.herokuapp.com/" target="_blank" class="button project-link">Visit Cake Sera, Sera</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="column is-half-desktop is-half-tablet is-full-mobile project-column" id="project-four">
           <div class="hover-div">
-            <h1 class="project-title">BOOTLEG BILL'S UNOFFICIAL AUDIO RARITIES</h1>
-            <p class="project-description">Build: HTML, CSS, ReactJS, React-Bootstrap, Node.js, Express.js, MongoDB</p>
-            <p class="project-description">A full-stack app using ReactJS and Express, constructed as part of a three-person team as the final project for General Assembly's Software Engineering Immersive. An E-Commerce app for the sale of custom-designed bootleg mixtapes, where users can register as either a buyer with basic permissions for viewing and purchasing or a seller with expanded permissions for product/order CRUD operations.</p>
-            <div class="git-div">
-              <a href="https://github.com/C-T-Ailey/project-04" target="_blank" class="button project-link">View the backend code on GitHub</a>
-              <a href="https://github.com/C-T-Ailey/project-04-fe" target="_blank" class="button project-link">View the frontend code on GitHub</a>
-            </div>
-            <div class="link-div">
-              <a href="https://bootlegbills.herokuapp.com/" target="_blank" class="button project-link">Visit Bootleg Bill's</a>
+            <div class="descr-container">
+              <h1 class="project-title">BOOTLEG BILL'S UNOFFICIAL AUDIO RARITIES</h1>
+              <p class="project-description">Build: HTML, CSS, ReactJS, React-Bootstrap, Node.js, Express.js, MongoDB</p>
+              <p class="project-description">A full-stack app using ReactJS and Express, constructed as part of a three-person team as the final project for General Assembly's Software Engineering Immersive. An E-Commerce app for the sale of custom-designed bootleg mixtapes, where users can register as either a buyer with basic permissions for viewing and purchasing or a seller with expanded permissions for product/order CRUD operations.</p>
+              <div class="git-div">
+                <a href="https://github.com/C-T-Ailey/project-04" target="_blank" class="button project-link">View the backend code on GitHub</a>
+                <a href="https://github.com/C-T-Ailey/project-04-fe" target="_blank" class="button project-link">View the frontend code on GitHub</a>
+              </div>
+              <div class="link-div">
+                <a href="https://bootlegbills.herokuapp.com/" target="_blank" class="button project-link">Visit Bootleg Bill's</a>
+              </div>
             </div>
           </div>
         </div>

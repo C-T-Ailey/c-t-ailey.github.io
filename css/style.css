@@ -151,6 +151,15 @@ div.title-div {
     padding-bottom: 3rem;
     color: white;
     text-align: center; }
+
+  #about-me .section-title-interests {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.125em;
+    font-weight: 200;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: white;
+    text-align: center; }
     
   #about-me .image-of-me {
     height: 12.5rem;
@@ -170,7 +179,10 @@ div.title-div {
 #skills {
   background-image: url("../assets/images/space2.jpeg");
   background-size: cover;
-  height: auto; }
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  }
   
   #skills .section-title {
     font-family: 'Raleway', sans-serif;
@@ -184,13 +196,16 @@ div.title-div {
   #skills .skills-wrap {
     margin-top: 1.25rem;
     margin-bottom: 2.625rem; }
+
+  
     
   #skills .skills-sub-group {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-weight: 200;
     font-size: 2.5rem;
-    color: white; }
+    color: white;
+    margin-top: 2rem; }
     
   #skills .skills-icon-div {
     width: 50%;
@@ -200,11 +215,27 @@ div.title-div {
     flex-wrap: wrap; }
     
     #skills .skills-icon-div .skills-icon {
-      font-size: 3.75rem;
+      font-size: 5.75rem;
       color: white;
       align-items: center;
       margin: auto;
       margin-bottom: 10px; }
+
+    #github-wordmark {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    #github-wordmark #github-icon {
+      font-size: 4.75rem;
+    }
+
+    #github-wordmark #github-name {
+      color: white;
+      margin-top: -10px;
+    }
 
 #portfolio {
   height: auto;
@@ -270,10 +301,17 @@ div.title-div {
     background-size: cover;
     border-radius: 1%;
     border: 0.0625rem solid white; }
-    
+
+.descr-prompt {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+}
 
 .hover-div {
-  background-color: rgba(51, 51, 51, 0.7);
+  background-color: rgba(43, 58, 90, 0.7);
   height: 100%;
   overflow: auto;
   color: white;
@@ -281,7 +319,12 @@ div.title-div {
   border-radius: 1%;
   text-align: center;
   font-weight: 400;
-  padding: 15px; }
+  padding: 15px; 
+  opacity: 0}
+
+  .show-description {
+    opacity: 1;
+  }
   
   .hover-div .project-title {
     font-size: 30px;
@@ -289,14 +332,14 @@ div.title-div {
     
   .hover-div .project-link {
     color: white;
-    background-color: #333;
+    background-color: rgb(12, 31, 66);
     border: none;
     margin-bottom: 10px;
     font-family: 'Raleway', sans-serif; }
     
   .hover-div .project-link:hover {
     color: white;
-    background-color: #111;
+    background-color: rgb(7, 16, 36);
     border: none;
     margin-bottom: 10px;
     font-family: 'Raleway', sans-serif; }
@@ -519,6 +562,15 @@ div.title-div {
       padding-bottom: 3rem;
       color: white;
       text-align: center; }
+
+    #about-me .section-title-interests {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.5em;
+      font-weight: 200;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      color: white;
+      text-align: center; }
       
     #about-me .image-of-me {
       height: 12.5rem;
@@ -573,6 +625,22 @@ div.title-div {
         color: white;
         align-items: center;
         margin: auto; }
+
+      #github-wordmark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+  
+      #github-wordmark #github-icon {
+        font-size: 4.75rem;
+      }
+  
+      #github-wordmark #github-name {
+        color: white;
+        margin-top: -10px;
+      }
 
   #portfolio {
     height: auto;
@@ -638,9 +706,17 @@ div.title-div {
       background-size: cover;
       border-radius: 1%;
       border: 0.0625rem solid white; }
+  
+  .descr-prompt {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+  }
 
   .hover-div {
-    background-color: rgba(51, 51, 51, 0.7);
+    background-color: rgba(43, 58, 90, 0.7);
     height: 100%;
     overflow: auto;
     color: white;
@@ -648,7 +724,12 @@ div.title-div {
     border-radius: 1%;
     text-align: left;
     font-weight: 400;
-    padding: 15px; }
+    padding: 15px;
+    opacity: 0}
+
+  .show-description {
+    opacity: 1;
+  }
     
     .hover-div .project-title {
       font-size: 30px;
@@ -657,14 +738,14 @@ div.title-div {
       
     .hover-div .project-link {
       color: white;
-      background-color: #333;
+      background-color: rgb(12, 31, 66);
       border: none;
       margin-bottom: 10px;
       font-family: 'Raleway', sans-serif; }
       
     .hover-div .project-link:hover {
       color: white;
-      background-color: #111;
+      background-color: rgb(7, 16, 36);
       border: none;
       margin-bottom: 10px;
       font-family: 'Raleway', sans-serif; }

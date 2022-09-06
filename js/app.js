@@ -9,4 +9,10 @@ $(document).ready(function(){
       window.location.hash = target;
     });
   });
+  
+  $(".hover-div").on('click', function() {
+    console.log("click")
+    $(this).toggleClass('show-description');
+    $(".click-here").toggle();
+  });
 });
