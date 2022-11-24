@@ -235,6 +235,7 @@ div.title-div {
     #github-wordmark #github-name {
       color: white;
       margin-top: -10px;
+      user-select: none;
     }
 
 #portfolio {
