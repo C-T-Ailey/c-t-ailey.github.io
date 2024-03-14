@@ -11,7 +11,35 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Chris Ailey</title>
+        <link rel="shortcut icon" href="https://i.imgur.com/LZpqpy7.png" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+      </head>
+
+      <body className={inter.className}>
+        <ul class="navbar-container">
+          <li class="navbar-li-left"><a class="navbar-a" href="#home">T O P</a></li>
+          <li class="navbar-li"><a class="navbar-a" href="#contact">C O N T A C T</a></li>
+          <li class="navbar-li"><a class="navbar-a" href="#portfolio">P R O J E C T S</a></li>
+          <li class="navbar-li"><a class="navbar-a" href="#skills">S K I L L S</a></li>
+          <li class="navbar-li"><a class="navbar-a" href="#about-me">A B O U T</a></li>
+        </ul>
+        {children}
+      </body>
+
+      <footer id="footer" class="footer">
+      <div class="footer-div">
+        <a href="https://github.com/c-t-ailey"  target="_blank"><i class="devicon-github-plain contact-info"></i></a>
+        <span class="copyright">&copy; Chris Ailey 2022</span>
+        <a href="https://www.linkedin.com/in/c-t-ailey/" target="_blank"><img src="./assets/images/linkedin.png"/></a>
+      </div>
+      </footer>
     </html>
   );
 }
