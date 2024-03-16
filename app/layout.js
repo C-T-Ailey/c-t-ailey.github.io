@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
       </head>
 
-      <body className={`${raleway.className} font-[200]`}>
+      <body className={`${raleway.className} font-[200] text-white h-screen`}>
         
         <div className="relative min-h-screen">
           <Navbar/>
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
             {children}
           </div>
           
-          <div className="absolute bottom-0">
+          <div className="absolute bottom-0 w-full">
             <Footer/>
           </div>
         </div>
