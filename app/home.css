@@ -15,5 +15,57 @@
 }
 
 .icon {
-  margin: 0 1rem 0 1rem
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
+
+.title {
+  -webkit-animation-name: title-animation;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: title-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.job {
+  -webkit-animation-name: job-animation;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: job-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.learnmore {
+  -webkit-animation-name: learn-more-animation;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: learn-more-animation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title-animation {
+  from {
+    left: 12.5rem;
+    color: rgba(0, 0, 0, 0); }
+  to {
+    left: 0;
+    color: #fbfaf9; } }
+
+@keyframes job-animation {
+  from {
+    left: -12.5rem;
+    color: rgba(0, 0, 0, 0); }
+  to {
+    left: 0;
+    color: #fbfaf9; } }
+
+@keyframes learn-more-animation {
+  from {
+    top: 12.5rem;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }

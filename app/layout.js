@@ -19,10 +19,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
       </head>
 
-      <body className={`${raleway.className} font-[200] text-white h-screen`}>
+      <body className={`${raleway.className} font-[300] text-white h-screen`}>
         
         <div className="relative min-h-screen">
           <Navbar/>
