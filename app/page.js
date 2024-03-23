@@ -317,11 +317,11 @@ export default function Home() {
         <div className="flex flex-col h-52 items-center justify-around text-xl font-normal whitespace-pre text-center m-auto select-none">
           
           <p>
-            Thank you for stopping by!  
+            {"Thank you for stopping by!"}  
           </p>
           
           <p>
-            If you'd like to discuss my previous work, upcoming opportunities, or just wanted to drop in and say hi, feel free to email me at:
+            {"If you'd like to discuss my previous work, upcoming opportunities, or just wanted to drop in and say hi, feel free to email me at:"}
           </p>
 
           <a href="mailto:chris.ailey90@gmail.com" className="bg-[#363636] w-fit p-2 m-2 rounded hover:bg-[#111] duration-300 select-none">C H R I S . A I L E Y 9 0 @ G M A I L . C O M</a>
