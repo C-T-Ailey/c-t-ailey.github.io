@@ -46,30 +46,30 @@ export default function Home() {
   
   const sectionTitleContainer = "h-full w-full flex flex-col justify-start items-center pb-12"
   
-  const sectionTitle = "w-[90%] h-auto py-12 mb-6 border-b-2 text-center font-[200] text-5xl"
+  const sectionTitle = "w-[90%] h-auto py-12 mb-6 border-b-2 text-center font-[200] text-4xl md:text-5xl"
   
   const skillContainer = "w-fit flex flex-col items-center justify-center my-10 p-3"
   
-  const skillSubHeader = "text-4xl mb-2"
+  const skillSubHeader = "text-2xl md:text-4xl mb-2"
   
-  const skillIcons = "text-[5.75rem] flex flex-row flex-wrap justify-center"
+  const skillIcons = "text-7xl md:text-[5.75rem] flex flex-row flex-wrap justify-center"
   
   const skillGlow = "drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
   
-  const projectWindow = "max-w-[890px] w-full h-[25rem] bg-center bg-cover m-auto border-2 rounded-md shadow-[0_5px_5px_rgba(0,0,0,0.6)]"
+  const projectWindow = "max-w-[890px] w-full h-48 md:h-80 lg:h-[25rem] bg-center bg-cover my-3 lg:m-auto border-2 rounded-md shadow-[0_5px_5px_rgba(0,0,0,0.6)]"
   
   const hiddenDesc = "hidden"
   
-  const revealedDesc = "h-full w-full px-5 backdrop-blur-sm  backdrop-brightness-[.1]  overflow-y-scroll flex flex-col items-center select-none"
+  const revealedDesc = "h-full w-full px-5 backdrop-blur-sm backdrop-brightness-[.1] overflow-y-scroll flex flex-col items-center select-none"
 
   return (
     <main className="flex flex-col items-center w-full">
       
       <div className={sectionSpace} id="home" onClick={(e) => e.preventDefault()}>
         {/* <div className="h-full w-[80%] flex flex-col justify-center items-end"> */}
-        <div className="h-fit w-[90%] top-[40vh] pr-14 absolute text-right">
-          <h1 className="text-5xl font-[200] m-4 relative title select-none">C&nbsp;H&nbsp;R&nbsp;I&nbsp;S &nbsp; A&nbsp;I&nbsp;L&nbsp;E&nbsp;Y</h1>
-          <h1 className="text-2xl font-[200] m-4 relative job select-none">F&nbsp;U&nbsp;L&nbsp;L - S&nbsp;T&nbsp;A&nbsp;C&nbsp;K &nbsp; S&nbsp;O&nbsp;F&nbsp;T&nbsp;W&nbsp;A&nbsp;R&nbsp;E &nbsp;E&nbsp;N&nbsp;G&nbsp;I&nbsp;N&nbsp;E&nbsp;E&nbsp;R</h1>
+        <div className="h-fit w-full md:pr-6 lg:pr-14 absolute text-right">
+          <h1 className="text-3xl font-[200] m-4 relative title select-none">C&nbsp;H&nbsp;R&nbsp;I&nbsp;S &nbsp; A&nbsp;I&nbsp;L&nbsp;E&nbsp;Y</h1>
+          <h1 className="text-xl font-[200] m-4 relative job select-none">F&nbsp;U&nbsp;L&nbsp;L - S&nbsp;T&nbsp;A&nbsp;C&nbsp;K &nbsp; S&nbsp;O&nbsp;F&nbsp;T&nbsp;W&nbsp;A&nbsp;R&nbsp;E &nbsp; E&nbsp;N&nbsp;G&nbsp;I&nbsp;N&nbsp;E&nbsp;E&nbsp;R</h1>
           <a href="#about" className={buttonStyle} onClick={(e) => sectionScroll(e)}>A B O U T &nbsp; M E</a>
         </div>
       </div>
@@ -82,11 +82,11 @@ export default function Home() {
             </h1>
           </div>
           
-          <div className="w-[12.5rem] h-[12.5rem] border-2 border-white rounded-full my-8 overflow-hidden">
+          <div className="w-32 h-32 md:w-[12.5rem] md:h-[12.5rem] border-2 border-white rounded-full my-1 md:my-6 overflow-hidden">
             <img src="/images/chrisbw.png" alt="A circular-bordered photo of me."/>
           </div>
 
-          <div className="w-[50%] h-full flex flex-col m-auto p-3 text-xl select-none">
+          <div className="w-full lg:w-[50rem] xl:w-[75rem] h-full flex flex-col m-auto p-3 text-base lg:text-xl select-none">
             <p>
               {"Hi! I'm Chris, freelance Web Developer and Software Engineer based in Kent, England."}
             </p>
@@ -119,7 +119,7 @@ export default function Home() {
             <div className={skillIcons}>
               <i className="devicon-html5-plain-wordmark icon"></i>
               <i className="devicon-css3-plain-wordmark icon"></i>
-              <div className="w-fit h-auto flex flex-col items-center mt-[-15px] icon">
+              <div className="w-fit h-auto flex flex-col items-center mt-[-10px] md:mt-[-15px] icon">
                 <i className="devicon-tailwindcss-original"></i>
                 <i className="devicon-tailwindcss-plain-wordmark my-[-35px]"></i>
               </div>
@@ -152,9 +152,9 @@ export default function Home() {
                 <i className="devicon-vercel-original-wordmark icon"></i>
                 <i className="devicon-npm-original-wordmark icon"></i>
                 <i className="devicon-vscode-plain-wordmark icon"></i>
-                <div className="w-fit h-auto flex flex-col items-center mt-[-15px] icon">
+                <div className="w-fit h-auto flex flex-col items-center mt-[-10px] md:mt-[-15px] icon">
                   <i className="devicon-pycharm-plain"></i>
-                  <i className="devicon-pycharm-plain-wordmark my-[-35px]"></i>
+                  <i className="devicon-pycharm-plain-wordmark my-[-30px] md:my-[-35px]"></i>
                 </div>
                 <i className="devicon-trello-plain-wordmark icon"></i>
               </div>
@@ -167,16 +167,16 @@ export default function Home() {
           <div className={sectionTitle}>
             <h1>P R O J E C T S</h1>
           </div>
-          <div className="text-2xl">
+          <div className="text-center text-wrap text-lg md:text-2xl">
             CLICK A PREVIEW TO LEARN MORE
           </div>
         </div>
 
-        <div className="max-w-[1800px] w-full h-full grid gap-x-10 gap-y-5 grid-cols-2 grid-rows-3 p-10">
+        <div className="max-w-[1800px] w-full h-full flex flex-col lg:grid lg:gap-x-10 lg:gap-y-5 lg:grid-cols-2 lg:grid-rows-3 px-5 pb-5 md:px-10 md:pb-10 lg:p-10">
 
           {/* Valen LaRae */}
 
-          <div className={`${projectWindow} bg-[url('/images/val.jpg')] hover:bg-[url('/images/valen.gif')] col-start-1 row-start-1`} id="val" onClick={(e) => toggleVisible(e)}>
+          <div className={`${projectWindow} bg-[url('/images/val.jpg')] hover:bg-[url('/images/valen.gif')] lg:col-start-1 lg:row-start-1`} id="val" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleVal ? "hidden" : revealedDesc}>
               <div className="text-white text-3xl font-bold my-3 pointer-events-none">
                 {"ART BY VALEN LARAE"}
@@ -196,7 +196,7 @@ export default function Home() {
 
           {/* Seven Card Sloane */}
 
-          <div className={`${projectWindow} bg-[url('/images/sloane.jpg')] hover:bg-[url('/images/sloane.gif')] col-start-2 row-start-1`} id="sloane" onClick={(e) => toggleVisible(e)}>
+          <div className={`${projectWindow} bg-[url('/images/sloane.jpg')] hover:bg-[url('/images/sloane.gif')] lg:col-start-2 lg:row-start-1`} id="sloane" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleSloane ? "hidden" : revealedDesc}>
               <div className="text-white text-3xl font-bold my-3 pointer-events-none">
                 {"SEVEN CARD SLOANE"}
@@ -216,7 +216,7 @@ export default function Home() {
 
           {/* Bootleg Bill's */}
 
-          <div className={`${projectWindow} bg-[url('/images/bills.jpg')] hover:bg-[url('/images/bills_current.gif')] col-start-1 row-start-2`} id="bill" onClick={(e) => toggleVisible(e)}>
+          <div className={`${projectWindow} bg-[url('/images/bills.jpg')] hover:bg-[url('/images/bills_current.gif')] lg:col-start-1 lg:row-start-2`} id="bill" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleBill ? "hidden" : revealedDesc}>
               <div className="text-white text-3xl font-bold my-3 pointer-events-none">
                 {"BOOTLEG BILL'S UNOFFICIAL AUDIO RARITIES"}
@@ -240,7 +240,7 @@ export default function Home() {
 
           {/* Cake Sera Sera */}
 
-          <div className={`${projectWindow} bg-[url('/images/cake.jpg')] hover:bg-[url('/images/cake.gif')] col-start-2 row-start-2`} id="cake" onClick={(e) => toggleVisible(e)}>
+          <div className={`${projectWindow} bg-[url('/images/cake.jpg')] hover:bg-[url('/images/cake.gif')] lg:col-start-2 lg:row-start-2`} id="cake" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleCake ? "hidden" : revealedDesc}>
               <div className="text-white text-3xl font-bold my-3 pointer-events-none">
                 {"CAKE SERA, SERA"}
@@ -263,7 +263,7 @@ export default function Home() {
 
           {/* Nomad Bookshelf */}
 
-          <div className={`${projectWindow} bg-[url('/images/nomad.jpg')] hover:bg-[url('/images/nomad.gif')] col-start-1 row-start-3`} id="nomad" onClick={(e) => toggleVisible(e)}>
+          <div className={`${projectWindow} bg-[url('/images/nomad.jpg')] hover:bg-[url('/images/nomad.gif')] lg:col-start-1 lg:row-start-3`} id="nomad" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleNomad ? "hidden" : revealedDesc}>
               <div className="text-white text-3xl font-bold my-3 pointer-events-none">
                 {"THE NOMAD BOOKSHELF"}
@@ -286,7 +286,7 @@ export default function Home() {
 
           {/* Burger Monarch */}
 
-          <div className={`${projectWindow} bg-[url('/images/burger.jpg')] hover:bg-[url('/images/burger.gif')] col-start-2 row-start-3`} id="burger" onClick={(e) => toggleVisible(e)}>
+          <div className={`${projectWindow} bg-[url('/images/burger.jpg')] hover:bg-[url('/images/burger.gif')] lg:col-start-2 lg:row-start-3`} id="burger" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleBurger ? "hidden" : revealedDesc}>
               <div className="text-white text-3xl font-bold my-3 pointer-events-none">
                 {"WELCOME TO HAMBURGER MONARCH"}
@@ -307,24 +307,26 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`${sectionSpace} mb-16`} id="contact">
-        <div className={sectionTitleContainer}>
+      {/* If the footer looks broken on any devices, this is the first place to fix */}
+
+      <div className={`${sectionSpace} pb-20 md:pb-16 md:mb-2`} id="contact">
+        <div className={`${sectionTitleContainer} mb-[-3rem]`}>
           <div className={sectionTitle}>
             <h1>C O N T A C T</h1>
           </div>
         </div>
       
-        <div className="flex flex-col h-52 items-center justify-around text-xl font-normal whitespace-pre text-center m-auto select-none">
+        <div className="h-fit w-full text-base lg:text-xl font-normal whitespace-pre text-center text-wrap m-auto pb-20 px-8 select-none">
           
           <p>
             {"Thank you for stopping by!"}  
           </p>
           
-          <p>
+          <p className="my-5">
             {"If you'd like to discuss my previous work, upcoming opportunities, or just wanted to drop in and say hi, feel free to email me at:"}
           </p>
 
-          <a href="mailto:chris.ailey90@gmail.com" className="bg-[#363636] w-fit p-2 m-2 rounded hover:bg-[#111] duration-300 select-none">C H R I S . A I L E Y 9 0 @ G M A I L . C O M</a>
+          <a href="mailto:chris.ailey90@gmail.com" className="bg-[#363636] w-fit p-2 mt-5 text-sm lg:text-lg rounded hover:bg-[#111] duration-300 select-none">C H R I S . A I L E Y 9 0 @ G M A I L . C O M</a>
         </div>
       
       </div>

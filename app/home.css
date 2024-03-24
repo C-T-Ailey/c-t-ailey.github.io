@@ -2,11 +2,12 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;}
+    background-size: cover;
+}
 
 .bgrad {
     background: linear-gradient(0.25turn,#01253d, #000b18, #01253d);
-    box-shadow: 2px 2px 6px 0px white;
+    filter: drop-shadow(0px 0px 5px white) ;
 }
   
 .bspace {
@@ -17,6 +18,7 @@
 .icon {
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .title {
