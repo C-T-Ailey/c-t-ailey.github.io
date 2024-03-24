@@ -29,14 +29,14 @@ export default function Navbar() {
     <div className="nav fixed w-full h-14 flex flex-row justify-between bg-[#333] text-xs md:text-base lg:text-lg z-40" id='nav' onClick={(e)=>e.preventDefault()}>
           
             <div className={navButtonContainer}>
-              <div className={navLinkDiv}><a className={`${navLinkAnchor} pb-6 md:pb-0`} href="#home" onClick={(e) => sectionScroll(e)}>T O P</a></div>
+              <div className={navLinkDiv} onClick={(e) => sectionScroll(e)}><a className={`${navLinkAnchor} pb-6 md:pb-0`} href="#home">T O P</a></div>
             </div>
             
             <div className={navButtonContainer}>
-              <div className={navLinkDiv}><a className={`${navLinkAnchor} pt-6 md:pt-0`} href="#about" onClick={(e) => sectionScroll(e)}>A B O U T</a></div>
-              <div className={navLinkDiv}><a className={`${navLinkAnchor} pb-6 md:pb-0`} href="#skills" onClick={(e) => sectionScroll(e)}>S K I L L S</a></div>
-              <div className={navLinkDiv}><a className={`${navLinkAnchor} pt-6 md:pt-0`} href="#projects" onClick={(e) => sectionScroll(e)}>P R O J E C T S</a></div>
-              <div className={navLinkDiv}><a className={`${navLinkAnchor} pb-6 md:pb-0`} href="#contact" onClick={(e) => sectionScroll(e)}>C O N T A C T</a></div>
+              <div className={navLinkDiv} onClick={(e) => sectionScroll(e)}><a className={`${navLinkAnchor} pt-6 md:pt-0`} href="#about">A B O U T</a></div>
+              <div className={navLinkDiv} onClick={(e) => sectionScroll(e)}><a className={`${navLinkAnchor} pb-6 md:pb-0`} href="#skills">S K I L L S</a></div>
+              <div className={navLinkDiv} onClick={(e) => sectionScroll(e)}><a className={`${navLinkAnchor} pt-6 md:pt-0`} href="#projects">P R O J E C T S</a></div>
+              <div className={navLinkDiv} onClick={(e) => sectionScroll(e)}><a className={`${navLinkAnchor} pb-6 md:pb-0`} href="#contact">C O N T A C T</a></div>
             </div>   
 
     </div>
