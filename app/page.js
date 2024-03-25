@@ -38,7 +38,6 @@ export default function Home() {
 
   const buttonStyle = "bg-[#363636] w-fit p-2 m-4 rounded hover:bg-[#111] duration-300 relative learnmore select-none"
   
-  const projectButtonStyle = "bg-[#363636] w-fit p-2 m-4 rounded hover:bg-[#111] duration-300 relative select-none pointer-events-auto"
   
   const sectionSpace = "section w-full flex flex-col justify-center items-center min-h-screen h-auto bspace"
   
@@ -58,9 +57,9 @@ export default function Home() {
   
   const projectWindow = "max-w-[890px] w-full h-48 md:h-80 lg:h-[25rem] bg-center bg-cover my-3 lg:m-auto border-2 rounded-md shadow-[0_5px_5px_rgba(0,0,0,0.6)]"
   
-  const hiddenDesc = "hidden"
+  const projectButtonStyle = "bg-[#363636] w-fit p-2 m-2 lg:m-4 rounded hover:bg-[#111] duration-300 relative select-none pointer-events-auto"
   
-  const revealedDesc = "h-full w-full px-5 backdrop-blur-sm backdrop-brightness-[.1] overflow-y-scroll flex flex-col items-center select-none"
+  const revealedDesc = "h-full w-full px-5 backdrop-blur-sm backdrop-brightness-[.15] overflow-y-scroll flex flex-col items-center select-none"
 
   return (
     <main className="flex flex-col items-center w-full">
@@ -178,16 +177,16 @@ export default function Home() {
 
           <div className={`${projectWindow} bg-[url('/images/val.jpg')] hover:bg-[url('/images/valen.gif')] lg:col-start-1 lg:row-start-1`} id="val" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleVal ? "hidden" : revealedDesc}>
-              <div className="text-white text-3xl font-bold my-3 pointer-events-none">
+              <div className="text-white text-xl md:text-3xl font-bold my-3 pointer-events-none text-center">
                 {"ART BY VALEN LARAE"}
               </div>
-              <div className="text-xl pointer-events-none mb-3">
+              <div className="text-base text-center md:text-xl pointer-events-none mb-3">
                 {"Build: HTML, CSS, Next.js, Tailwind CSS"}
               </div>
-              <div className="text-xl pointer-events-none">
-                {"A full-stack application built using the MERN stack, presented as a functional e-commerce application for the sale of custom-designed bootleg cassettes, records and apparel. Users can freely browse the site's products, listen to a selection of music as they shop, and register as either a customer to purchase items or as site staff to create and modify inventory and orders.\n\nOriginally developed as part of a three-person team as the final project for General Assembly's Software Engineering Immersive course, I now independently maintain and continue development of the application as an extended portfolio for my own graphic and audio design work."}
+              <div className="text-sm md:text-xl pointer-events-none">
+                {"A portfolio site built to specification for American-based artist Valen LaRae, showcasing a selection of work available for purchase during her tours of the comic book and video game convention circuit in the American South.\n\nThough currently frontend-only, I actively maintain the gallery and event schedule as content for each becomes available, with planned development of a backend to facilitate the artist's autonomy over updates."}
               </div>
-              <div className="w-full flex flex-wrap justify-center px-12 pointer-events-none">
+              <div className="w-full text-sm md:text-base text-center flex flex-wrap justify-center px-12 pointer-events-none">
                 <a href="https://github.com/C-T-Ailey/ValenLaraeArt" target="_blank" className={projectButtonStyle}>View on GitHub</a>
                 <a href="https://valenlaraeart.vercel.app/" target="_blank" className={projectButtonStyle}>Visit Art by Valen LaRae</a>
               </div>
@@ -198,16 +197,16 @@ export default function Home() {
 
           <div className={`${projectWindow} bg-[url('/images/sloane.jpg')] hover:bg-[url('/images/sloane.gif')] lg:col-start-2 lg:row-start-1`} id="sloane" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleSloane ? "hidden" : revealedDesc}>
-              <div className="text-white text-3xl font-bold my-3 pointer-events-none">
+              <div className="text-white text-xl md:text-3xl font-bold my-3 pointer-events-none text-center">
                 {"SEVEN CARD SLOANE"}
               </div>
-              <div className="text-xl pointer-events-none mb-3">
-                {"Build: HTML, CSS, ReactJS, React-Bootstrap, Node.js, Express.js, MongoDB"}
+              <div className="text-base text-center md:text-xl pointer-events-none mb-3">
+                {"Build: HTML, CSS, JavaScript, React"}
               </div>
-              <div className="text-xl pointer-events-none">
-                {"A full-stack application built using the MERN stack, presented as a functional e-commerce application for the sale of custom-designed bootleg cassettes, records and apparel. Users can freely browse the site's products, listen to a selection of music as they shop, and register as either a customer to purchase items or as site staff to create and modify inventory and orders.\n\nOriginally developed as part of a three-person team as the final project for General Assembly's Software Engineering Immersive course, I now independently maintain and continue development of the application as an extended portfolio for my own graphic and audio design work."}
+              <div className="text-sm md:text-xl pointer-events-none whitespace-pre text-wrap">
+                {"A single-player card game based on the Texas Hold 'Em variant of Poker, where the player places bets on the appearance of a specific winning hand before seven hands of seven cards are dealt.\n\nWhile the game is in a presentable and playable state, several features are planned for future updates, including:\n• A points shop for spending won chips on features such as new card backs and outcome-adjusting bonuses;\n• Achievements for meeting specific criteria in rounds, which unlock new items in the points shop;\n• Placement animations so the planned purchaseable card backs will be visible."}
               </div>
-              <div className="w-full flex flex-wrap justify-center px-12 pointer-events-none">
+              <div className="w-full text-sm md:text-base text-center flex flex-wrap justify-center px-12 pointer-events-none">
                 <a href="https://github.com/C-T-Ailey/Card-Game-App" target="_blank" className={projectButtonStyle}>View on GitHub</a>
                 <a href="https://sevencardsloane.vercel.app/" target="_blank" className={projectButtonStyle}>Play Seven Card Sloane</a>
               </div>
@@ -218,21 +217,21 @@ export default function Home() {
 
           <div className={`${projectWindow} bg-[url('/images/bills.jpg')] hover:bg-[url('/images/bills_current.gif')] lg:col-start-1 lg:row-start-2`} id="bill" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleBill ? "hidden" : revealedDesc}>
-              <div className="text-white text-3xl font-bold my-3 pointer-events-none">
+              <div className="text-white text-xl md:text-3xl font-bold my-3 pointer-events-none text-center">
                 {"BOOTLEG BILL'S UNOFFICIAL AUDIO RARITIES"}
               </div>
-              <div className="text-xl pointer-events-none mb-3">
-                {"Build: HTML, CSS, ReactJS, React-Bootstrap, Node.js, Express.js, MongoDB"}
+              <div className="text-base text-center md:text-xl pointer-events-none mb-3">
+                {"Build: HTML, CSS, React, React-Bootstrap, Node.js, Express.js, MongoDB"}
               </div>
-              <div className="text-xl pointer-events-none">
-                {"A full-stack application built using the MERN stack, presented as a functional e-commerce application for the sale of custom-designed bootleg cassettes, records and apparel. Users can freely browse the site's products, listen to a selection of music as they shop, and register as either a customer to purchase items or as site staff to create and modify inventory and orders.\n\nOriginally developed as part of a three-person team for the final project of General Assembly's Software Engineering Immersive course, I now independently maintain and develop the application as an extended portfolio for my own graphic and audio design work."}
+              <div className="text-sm md:text-xl pointer-events-none">
+                {"A full-stack application presented as a functional e-commerce application for the sale of custom-designed bootleg cassettes, records and apparel. Users can freely browse the site's products, listen to a selection of music as they shop, and register as either a customer to purchase items or as site staff to create and modify inventory and orders.\n\nOriginally developed as part of a three-person team for the final project of General Assembly's Software Engineering Immersive course, I now independently maintain and develop the application as an extended portfolio for my own graphic and audio design work."}
               </div>
-              <div className="w-full flex flex-wrap justify-center px-12 pointer-events-none">
+              <div className="w-full text-sm md:text-base text-center flex flex-wrap justify-center px-12 pointer-events-none">
                 <a href="https://github.com/C-T-Ailey/Bootleg-Bills-Frontend/" target="_blank" className={projectButtonStyle}>View active codebase on GitHub</a>
                 <a href="https://github.com/C-T-Ailey/Bootleg-Bills-Frontend/tree/legacy" target="_blank" className={projectButtonStyle}>View legacy codebase on GitHub</a>
                 <a href="https://bootleg-bills.herokuapp.com/" target="_blank" className={projectButtonStyle}>{"Visit Bootleg Bill's"}</a>
               </div>
-              <div className="text-center pointer-events-none">
+              <div className="text-center text-xs md:text-base pointer-events-none">
                 {"Please be aware that this project is hosted using Heroku's \"Eco\" dynos, and may take a few moments to wake up before loading."}
               </div>
             </div>
@@ -242,20 +241,20 @@ export default function Home() {
 
           <div className={`${projectWindow} bg-[url('/images/cake.jpg')] hover:bg-[url('/images/cake.gif')] lg:col-start-2 lg:row-start-2`} id="cake" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleCake ? "hidden" : revealedDesc}>
-              <div className="text-white text-3xl font-bold my-3 pointer-events-none">
+              <div className="text-white text-xl md:text-3xl font-bold my-3 pointer-events-none text-center">
                 {"CAKE SERA, SERA"}
               </div>
-              <div className="text-xl pointer-events-none mb-3">
+              <div className="text-base text-center md:text-xl pointer-events-none mb-3">
                 {"Build: HTML, CSS, Bulma, Python, Django, PostGreSQL"}
               </div>
-              <div className="text-xl pointer-events-none">
+              <div className="text-sm md:text-xl pointer-events-none">
                 {"A full-stack Django app, constructed as part of a three-person team, where users can view and submit entries for various baked goods and variant recipes for each. Serving as the Team Lead for this project, I managed planning, preparation and deployment, defining the database models, implementing pagination and styling."}
               </div>
-              <div className="w-full flex flex-wrap justify-center px-12 pointer-events-none">
+              <div className="w-full text-sm md:text-base text-center flex flex-wrap justify-center px-12 pointer-events-none">
                 <a href="https://github.com/C-T-Ailey/Project-3-Cake-Recipe-Site-Fixed" target="_blank" className={projectButtonStyle}>View on GitHub</a>
                 <a href="https://cakeprojectapp.herokuapp.com/" target="_blank" className={projectButtonStyle}>Visit Cake Sera, Sera</a>
               </div>
-              <div className="text-center pointer-events-none">
+              <div className="text-center text-xs md:text-base pointer-events-none">
                 {"Please be aware that this project is hosted using Heroku's \"Eco\" dynos, and may take a few moments to wake up before loading."}
               </div>
             </div>
@@ -265,20 +264,20 @@ export default function Home() {
 
           <div className={`${projectWindow} bg-[url('/images/nomad.jpg')] hover:bg-[url('/images/nomad.gif')] lg:col-start-1 lg:row-start-3`} id="nomad" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleNomad ? "hidden" : revealedDesc}>
-              <div className="text-white text-3xl font-bold my-3 pointer-events-none">
+              <div className="text-white text-xl md:text-3xl font-bold my-3 pointer-events-none text-center">
                 {"THE NOMAD BOOKSHELF"}
               </div>
-              <div className="text-xl pointer-events-none mb-3">
+              <div className="text-base text-center md:text-xl pointer-events-none mb-3">
                 {"Build: HTML, CSS, Express.js, Embedded JavaScript, MongoDB"}
               </div>
-              <div className="text-xl pointer-events-none">
+              <div className="text-sm md:text-xl pointer-events-none">
                 {"A full-stack Express.js app where users can register to view, submit and review books and their authors."}
               </div>
-              <div className="w-full flex flex-wrap justify-center px-12 pointer-events-none">
+              <div className="w-full text-sm md:text-base text-center flex flex-wrap justify-center px-12 pointer-events-none">
                 <a href="https://github.com/C-T-Ailey/Project02GroupGit" target="_blank" className={projectButtonStyle}>View on GitHub</a>
                 <a href="https://nomadbooks.herokuapp.com/" target="_blank" className={projectButtonStyle}>Visit The Nomad Bookshelf</a>
               </div>
-              <div className="text-center pointer-events-none">
+              <div className="text-center text-xs md:text-base pointer-events-none">
                 {"Please be aware that this project is hosted using Heroku's \"Eco\" dynos, and may take a few moments to wake up before loading."}
               </div>
             </div>
@@ -288,16 +287,16 @@ export default function Home() {
 
           <div className={`${projectWindow} bg-[url('/images/burger.jpg')] hover:bg-[url('/images/burger.gif')] lg:col-start-2 lg:row-start-3`} id="burger" onClick={(e) => toggleVisible(e)}>
             <div className={!visibleBurger ? "hidden" : revealedDesc}>
-              <div className="text-white text-3xl font-bold my-3 pointer-events-none">
+              <div className="text-white text-xl md:text-3xl font-bold my-3 pointer-events-none text-center">
                 {"WELCOME TO HAMBURGER MONARCH"}
               </div>
-              <div className="text-xl pointer-events-none mb-3">
+              <div className="text-base text-center md:text-xl pointer-events-none mb-3">
                 {"Build: HTML, CSS, JavaScript"}
               </div>
-              <div className="text-xl pointer-events-none">
+              <div className="text-sm md:text-xl pointer-events-none">
                 {"A browser-based game built with HTML, CSS and JavaScript where the player must construct a burger according to a preview image of their target from random falling ingredients."}
               </div>
-              <div className="w-full flex flex-wrap justify-center px-12 pointer-events-none">
+              <div className="w-full text-sm md:text-base text-center flex flex-wrap justify-center px-12 pointer-events-none">
                 <a href="https://github.com/C-T-Ailey/Project-1-Burger-Game" target="_blank" className={projectButtonStyle}>View on GitHub</a>
                 <a href="https://c-t-ailey.github.io/Project-1-Burger-Game/" target="_blank" className={projectButtonStyle}>Play Welcome to Hamburger Monarch</a>
               </div>
