@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
       </head>
 
-      <body className={`${raleway.className} font-[300] text-white min-h-screen max-w-screen`}>
+      <body className={`${raleway.className} font-[300] text-white min-h-screen max-w-screen overflow-x-hidden`}>
         
         <div className="relative w-full">
           <Navbar/>

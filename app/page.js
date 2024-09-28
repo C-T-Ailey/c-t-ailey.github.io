@@ -183,12 +183,12 @@ export default function Home() {
               <div className="text-base text-center md:text-xl pointer-events-none mb-3">
                 {"Build: HTML, CSS, Next.js, Tailwind CSS"}
               </div>
-              <div className="text-sm md:text-xl pointer-events-none">
-                {"A portfolio site built to specification for American-based artist Valen LaRae, showcasing a selection of work available for purchase during her tours of the comic book and video game convention circuit in the American South.\n\nThough currently frontend-only, I actively maintain the gallery and event schedule as content for each becomes available, with planned development of a backend to facilitate the artist's autonomy over updates."}
+              <div className="text-sm md:text-xl pointer-events-none whitespace-pre text-wrap">
+                {"A full-stack portfolio site built to specification for American-based artist Valen LaRae, showcasing a selection of work available for purchase during her tours of the comic book and video game convention circuit in the American South.\n\nIn line with the client's requirements, the site also includes a hidden, authentication-gated dashboard to facilitate her freedom to update the galleries and event schedule at her leisure."}
               </div>
               <div className="w-full text-sm md:text-base text-center flex flex-wrap justify-center px-12 pointer-events-none">
                 <a href="https://github.com/C-T-Ailey/ValenLaraeArt" target="_blank" className={projectButtonStyle}>View on GitHub</a>
-                <a href="https://valenlaraeart.vercel.app/" target="_blank" className={projectButtonStyle}>Visit Art by Valen LaRae</a>
+                <a href="https://www.valenlaraeart.com/" target="_blank" className={projectButtonStyle}>Visit Art by Valen LaRae</a>
               </div>
             </div>
           </div>
@@ -223,7 +223,7 @@ export default function Home() {
               <div className="text-base text-center md:text-xl pointer-events-none mb-3">
                 {"Build: HTML, CSS, React, React-Bootstrap, Node.js, Express.js, MongoDB"}
               </div>
-              <div className="text-sm md:text-xl pointer-events-none">
+              <div className="text-sm md:text-xl pointer-events-none whitespace-pre text-wrap">
                 {"A full-stack application presented as a functional e-commerce application for the sale of custom-designed bootleg cassettes, records and apparel. Users can freely browse the site's products, listen to a selection of music as they shop, and register as either a customer to purchase items or as site staff to create and modify inventory and orders.\n\nOriginally developed as part of a three-person team for the final project of General Assembly's Software Engineering Immersive course, I now independently maintain and develop the application as an extended portfolio for my own graphic and audio design work."}
               </div>
               <div className="w-full text-sm md:text-base text-center flex flex-wrap justify-center px-12 pointer-events-none">
